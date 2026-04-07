@@ -8,8 +8,8 @@ def home():
 
 @app.route('/add')
 def add():
-    a = int(request.args.get('a', 0))
-    b = int(request.args.get('b', 0))
+    a = int(request.args.get('a', 5))
+    b = int(request.args.get('b', 010))
     return {"result": a + b}
 
 if __name__ == '__main__':
